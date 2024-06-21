@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav class="banner">
+            <h1><span>Care</span>Point</h1>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+    <!--about us-->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>Best Cardiac Centre in NewDelhi</h1>
+                <p>Welcome to CarePoint, where we specialize in comprehensive cardiac care with a commitment to excellence and patient-centered service. Established [year], our hospital has been a leader in cardiac medicine, offering advanced treatments
+                    and compassionate care to patients with heart conditions. Our Mission At CarePoint, our mission is to provide superior cardiac healthcare through innovative treatments, expert physicians, and state-of-the-art technology. We are dedicated
+                    to improving the lives of our patients by delivering personalized care in a supportive and healing environment. Core Values Excellence: We uphold the highest standards of medical care and patient safety. Compassion: We treat each patient
+                    with empathy, respect, and dignity. Innovation: We continuously strive to integrate the latest advancements in cardiac medicine into our practice. Collaboration: We work closely with patients, families, and referring physicians to
+                    ensure coordinated and effective care.<br><br>Our Specialized Service.CarePoint offers a wide range of specialized cardiac services, including: Interventional Cardiology Cardiothoracic Surgery Electrophysiology Cardiovascular Imaging
+                    Heart Failure Management Preventive Cardiology Cardiac Rehabilitation Community Involvement Beyond clinical care, CarePoint is committed to promoting heart health in our community. We actively participate in educational initiatives,
+                    support groups, and outreach programs aimed at raising awareness and preventing cardiovascular diseases.<br> <br>Our mission is to improve heart health through excellence in clinical care, innovative treatments, and community outreach.
+                    <br> We offer a comprehensive range of specialized services, including interventional cardiology, cardiothoracic surgery, electrophysiology, and more. Committed to excellence and patient well-being, we collaborate closely with patients,
+                    families, and referring physicians to deliver personalized care and achieve superior outcomes.<br> This summary captures the essence of the hospital's expertise, mission, core services, and commitment to both patient care and community
+                    health. Adjustments can be made to highlight specific achievements, partnerships, or initiatives tailored to your cardiac hospital's unique identity.
+                    <br><br>The range of cardiac services offered by these partner hospitals is comprehensive, covering every aspect of cardiac care. From diagnostic tests to non-invasive procedures, interventional cardiology, cardiac surgery, and post-operative
+                    care, these hospitals are equipped with state-of-the-art facilities and cutting-edge technology to provide the best possible outcomes for patients.
+
+
+                </p>
+                <a href="" class="hero-btn blue-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="images/ds.jpg">
+            </div>
+        </div>
+    </section>
+    <!--footer-->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>we are committed to delivering compassionate care and advanced medical services to our community since 1990. Our mission is to enhance health and quality of life through excellent healthcare services, embracing innovation and integrity in everything
+            we do.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>Made with<i class="fa-regular fa-heart"></i>by CarePoint</p>
+    </section>
+
+
+</body>
+
+
+
+<!---javascript for toggle menu-->
+<script>
+    let navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</html>

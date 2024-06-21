@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav class="banner">
+            <h1><span>Care</span>Point</h1>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Services </h1>
+    </section>
+    <!--services-->
+    <section class="services">
+        <h1>Our Services</h1>
+        <p>Explore our healthcare services designed to provide comprehensive care for you and your family.From medical specialties to diagnostic procedure and emergency care ,we're here to meet your healthcare needs!</p>
+        <div class="row">
+            <div class="services-col">
+                <img src="images/heart.jpg">
+                <h3>Health Check-ups</h3>
+                <p>Our health Check-up services provide a thorough assessment of your overall health.We offer routine exams and screenings to detect any potential issues early.Our team will guide you on maintaining a healthy lifestyle based on your results.Stay
+                    proactive about your health based on your results.Regular heart health checkups are a proactive way to maintain cardiovascular health and prevent serious heart conditions. If you are considering a heart health checkup, consult with
+                    your healthcare .</p>
+            </div>
+            <div class="services-col">
+                <img src="images/homecare.jpg">
+                <h3>Homecare Services</h3>
+                <p>Our homecare services are designed to bring quality healthcare to the comfort of your home. Whether recovering from illness, managing a chronic condition, or needing assistance with daily activities, our dedicated team of healthcare professionals
+                    is here to support you. Services include: Nursing Care: Skilled nursing services such as wound care, medication management, and post-operative care. Personal Care: Assistance with activities of daily living (ADLs) such as bathing,
+                    grooming, and dressing..</p>
+            </div>
+            <div class="services-col">
+                <img src="images/lab.jpg">
+                <h3>laboratory Services</h3>
+                <p>In a cardiac hospital, laboratory services are specialized to diagnose and monitor heart conditions. Key services include: Cardiac Biomarker Testing: Measures substances like troponin and BNP to detect heart damage. Lipid Profile: Assesses
+                    cholesterol levels to evaluate cardiovascular risk. Electrolyte Panel: Checks levels of essential electrolytes affecting heart function. Coagulation Studies: Evaluates blood clotting, crucial for managing conditions like atrial fibrillation.
+                    Renal Function Tests: Monitors kidney function.</p>
+
+            </div>
+            <div class="services-col">
+                <img src="images/bus.jpg">
+                <h3>Emergency bus service</h3>
+                <p> 24-hour emergency bus service in a cardiac hospital provides round-the-clock, rapid transport for patients experiencing acute cardiovascular emergencies. Key features include: Round-the-Clock Availability: Operates 24/7. Specialized Medical
+                    Staff: Staffed with trained EMTs or paramedics skilled in cardiac care. Advanced Medical Equipment: Equipped with defibrillators, ECG machines, oxygen, and essential medications. Rapid Communication: Direct, real-time communication
+                    with the hospital’s emergency department..</p>
+
+            </div>
+    </section>
+
+    <!--footer-->
+    <section class="footer">
+        <h1>About Us</h1>
+        <p> we are committed to delivering compassionate care and advanced medical services to our community since 1990. Our mission is to enhance health and quality of life through excellent healthcare services, embracing innovation and integrity in everything
+            we do.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>Made with<i class="fa-regular fa-heart"></i>by CarePoint</p>
+    </section>
+
+
+</body>
+
+
+
+<!---javascript for toggle menu-->
+<script>
+    let navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</html>
